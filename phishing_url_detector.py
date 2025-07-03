@@ -1,3 +1,13 @@
+"""
+Phishing URL Detection System
+Developed by Guru Vamsi (https://github.com/vamsicodes7)
+
+This system uses machine learning to detect phishing URLs by analyzing various URL features.
+Includes feature extraction, model training, and HTML report generation.
+
+Note: This code is developed by Guru Vamsi. Please provide proper attribution if used or modified.
+"""
+
 import pandas as pd
 import numpy as np
 import re
@@ -77,7 +87,8 @@ def create_sample_data():
     return df
 
 class URLFeatureExtractor:
-    """Extract features from URLs for phishing detection"""
+    """Extract features from URLs for phishing detection
+    Developed by Guru Vamsi as part of the Phishing URL Detection System"""
     
     def __init__(self):
         self.suspicious_keywords = [
@@ -181,7 +192,8 @@ class URLFeatureExtractor:
         return pd.DataFrame(features_list)
 
 class PhishingDetector:
-    """Main phishing detection class"""
+    """Main phishing detection class
+    Developed by Guru Vamsi as part of the Phishing URL Detection System"""
     
     def __init__(self):
         self.feature_extractor = URLFeatureExtractor()
@@ -300,7 +312,8 @@ class PhishingDetector:
         return results
 
 class HTMLReportGenerator:
-    """Generate beautiful HTML reports for phishing detection results"""
+    """Generate beautiful HTML reports for phishing detection results
+    Developed by Guru Vamsi as part of the Phishing URL Detection System"""
     
     def __init__(self):
         self.report_data = {}
@@ -342,6 +355,8 @@ class HTMLReportGenerator:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guru Vamsi">
+    <meta name="description" content="Phishing URL Detection System developed by Guru Vamsi">
     <title>Phishing URL Detection Report</title>
     <style>
         * {{
@@ -676,7 +691,7 @@ class HTMLReportGenerator:
         
         <div class="footer">
             <p>Report generated on {self.report_data['timestamp']}</p>
-            <p class="timestamp">Phishing URL Detector - Machine Learning Model</p>
+            <p class="timestamp">Phishing URL Detector - Developed by Guru Vamsi</p>
         </div>
     </div>
     
@@ -748,7 +763,7 @@ class HTMLReportGenerator:
 def main():
     """Main function to run the phishing detector"""
     print("=" * 60)
-    print("PHISHING URL DETECTOR")
+    print("PHISHING URL DETECTOR - Developed by Guru Vamsi")
     print("=" * 60)
     
     # Create sample data
