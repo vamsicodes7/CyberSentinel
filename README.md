@@ -18,11 +18,12 @@ A machine learning-based system that detects phishing URLs by extracting intelli
 - Modular and beginner-friendly Python code
 
 ## Technologies Used
-Python 3.x
-Scikit-learn
-Pandas, NumPy
-Regex and URL Parsing
-HTML + CSS (for report generation)
+
+- Python 3.x
+- Scikit-learn
+- Pandas, NumPy
+- Regex and URL Parsing
+- HTML + CSS (for report generation)
 
 ![image](https://github.com/user-attachments/assets/f1b6f322-39c6-4a4d-a5be-03ae47870879)
 ![image](https://github.com/user-attachments/assets/4088352b-79cb-4142-9f23-20c5609b7301)
